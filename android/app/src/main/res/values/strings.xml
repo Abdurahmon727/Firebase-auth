@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HiChat</string>
+    <string name="facebook_app_id">836774960646032</string>
+    <string name="facebook_client_token">4a09efd83d609db742c1a02e7874ecb8</string>
+</resources>
