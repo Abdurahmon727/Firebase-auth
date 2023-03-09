@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hi_chat/Model/const.dart';
+
+import '../Model/const.dart';
 
 Drawer myDrawer(BuildContext context) => Drawer(
       child: ListView(

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hi_chat/Controller/sign_in_provider.dart';
-import 'package:hi_chat/Model/const.dart';
-import 'package:hi_chat/Model/firebase_auth.dart';
 import 'package:provider/provider.dart';
 
+import '../../Controller/sign_in_provider.dart';
+import '../../Model/const.dart';
+import '../../Model/firebase_auth.dart';
+
 class SmsChechPage extends StatelessWidget {
-  var controller = MaskedTextController(mask: '000000');
+  final controller = MaskedTextController(mask: '000000');
 
   SmsChechPage({super.key});
   @override

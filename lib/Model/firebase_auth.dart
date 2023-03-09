@@ -26,12 +26,15 @@ Future<void> signInWithGoogle(BuildContext context) async {
       Navigator.pushNamedAndRemoveUntil(context, '/homePage', (route) => false);
     });
   } on FirebaseAuthException catch (e) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
         duration: const Duration(seconds: 5),
         content: Text(
           e.message.toString(),
           style: const TextStyle(color: Colors.red),
-        )));
+        ),
+      ),
+    );
   }
 }
 
